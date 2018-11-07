@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/index/index",
+    
+    "pages/news/news",
+    "pages/logs/logs",
+    "pages/myself/myself",
+    "pages/line/index",
+    "pages/newsArticle/steelNews/index",
+    "pages/newsArticle/coalNews/index"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"yellow",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "tengjing",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor":"#0291ec",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/img/tabBar-icon/index.png",
+        "selectedIconPath": "pages/img/tabBar-icon/index1.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "资讯",
+        "iconPath": "pages/img/tabBar-icon/news.png",
+        "selectedIconPath": "pages/img/tabBar-icon/news1.png"
+      },
+      {
+        "pagePath": "pages/line/index",
+        "text": "图表",
+        "iconPath": "pages/img/tabBar-icon/data.png",
+        "selectedIconPath": "pages/img/tabBar-icon/data1.png"
+      },
+      {
+        "pagePath": "pages/myself/myself",
+        "text": "我的",
+        "iconPath": "pages/img/tabBar-icon/myself.png",
+        "selectedIconPath": "pages/img/tabBar-icon/myself1.png"
+      }
+    ]
+  }
+}

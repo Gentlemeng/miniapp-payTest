@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<view class="index-chart">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 查看更多 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+
+  <view class="macro">
+    <!-- 宏观主要指标 -->
+    <view class="macroIndexTab-wrap">
+      <scroll-view scroll-x="true" class="macroIndexTab" scroll-left="{{navScrollLeft}}" scroll-with-animation="true" enable-back-to-top="true" bindscroll="tabScroll">
+        <block wx:for="{{macroIndexTabData}}" wx:for-index="idx" wx:for-item="tabItem" wx:key="idx">
+          <view class="macroIndexTab-item {{currentTab == idx ?'active':''}}" data-current="{{idx}}" bindtap="switchNav">{{tabItem.text}}</view>
+        </block>
+      </scroll-view>
+    </view>
+
+    <!-- 指标内容 -->
+    <swiper class="tab-box" current="{{currentTab}}" duration="300" bindchange="switchTab">
+      <!-- VA -->
+      <swiper-item class="tab-content">
+        <ec-canvas id="mychart-dom-line" class="macro-chart" canvas-id="mychart-line" ec="{{ ecVA }}"></ec-canvas>
+      </swiper-item>
+      <!-- PPI -->
+      <swiper-item class="tab-content">
+        <ec-canvas id="mychart-dom-line" class="macro-chart" canvas-id="mychart-line" ec="{{ ecPPI }}"></ec-canvas>
+      </swiper-item>
+      <!-- PROF -->
+      <swiper-item class="tab-content">
+        prof
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="energy-sort-wrap">
+    <view class="energy-sort">
+      
+    </view>
+  </view>
+
+</view>

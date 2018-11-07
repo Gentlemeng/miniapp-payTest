@@ -1,0 +1,72 @@
+/**index.wxss**/
+/* .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+} */
+.index-chart{
+  background:#d7d7d7;
+}
+.macroIndexTab-wrap{
+  display: block;
+  width:100%;
+  heigth:100rpx;
+}
+.macroIndexTab {
+  height: 80rpx;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  line-height: 80rpx;
+  background: #f7f7f7;
+  font-size: 16px;
+  white-space: nowrap;
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+  z-index: 99;
+}
+.macroIndexTab-item {
+  width: 20%;
+  display: inline-block;
+  text-align: center;
+}
+
+.macroIndexTab-item.active {
+  color: red;
+}
+.tab-box {
+  width:100%;
+  height: 420rpx;
+  box-sizing: border-box;
+  background:#fff;
+}
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+.macro-chart{
+  display: block;
+  width:680rpx;
+  height:340rpx;
+  margin:40rpx auto 0;
+  background:#000;
+}
+.linechart{
+  height:400px;
+}
